@@ -1,0 +1,343 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d;;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: roboto;
+    background-color: #0b192f;
+}
+header{
+    background-color: #162b4d;
+    height: 100px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 4%;
+    padding-left: 2%;
+}
+.header_logo{
+    color: white;
+    font-weight: lighter;
+    font-size:37px;
+}
+.header_logo p {
+    color: white;
+}
+.header_logo span{
+    color: red;
+}
+.topNav{
+    font-size: 22px;
+    padding-top: 9px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-weight: lighter;
+}
+nav a:hover{
+    background-color: #343a72;
+    cursor: pointer;
+}
+main{
+    margin-left: 6%;
+    margin-right: 7%;
+}
+.main_container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.main_post{
+    width: 75%;
+    padding: 1%;
+}
+.allPost {
+    height: 334px;
+    display: flex;
+}
+.allPost:nth-child(even){
+    flex-direction: row-reverse;
+    height: 378px;
+}
+.allPost:nth-child(even) >.post_description{
+    flex-direction: row-reverse;
+    text-align: right;
+    padding-right: 32px;
+}
+.allPost:nth-child(even) >.post_description >.post_date{
+    text-align: left;
+}
+.onlyText{
+    height: 250px;
+}
+.onlyText .post_description{
+    width: 100%;
+}
+.onlyText .post_description .post_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.onlyText h3, .onlyText p {
+    color: white;
+}
+.main_post img {
+    object-fit: cover;
+    width: 50%;
+    /*height: 334px;*/
+}
+.main_post img:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+h3{
+    font-size: 41px;
+    font-weight: 100;
+    color: #808080;
+    margin-top: 10%;
+}
+p{
+    color: #808080;
+    line-height: 27px;
+    margin-top: -9px;
+}
+.post_description{
+    width: 50%;
+    display: flex;
+    padding-left: 20px;
+}
+.post_description:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.post_container{
+    width:77%;
+}
+.post_date {
+    opacity: .5;
+    width: 23%;
+    padding: 20px 20px 0 0;
+    text-align: right;
+}
+.post_date_number {
+    font-size: 50px;
+    font-weight: 100;
+}
+.post_date_month {
+    font-size: 30px;
+    font-weight: 100;
+}
+.post1{
+    background: #f3d250;
+}
+.post2{
+    background: #8d8741;
+}
+.post3 {
+    background: #659dbd;
+    /*height: 409px;*/
+}
+.post4 {
+    background: #daad86;
+}
+#post4 {
+    height: 323px;
+}
+.post5 {
+    background: url("../img/post5.jpg") no-repeat center top / cover;
+    height: 423px;
+}
+.blog{
+    background-color: white;
+}
+.main_blog{
+    width: 22%;
+    margin-top: 1%;
+    height: 1000px;
+}
+.main_blog img {
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 30px;
+}
+button {
+    text-transform: uppercase;
+    border: 2px solid;
+    background-color: white;
+    height: 36px;
+    padding: 1% 5%;
+    margin-top: 15px;
+}
+button:hover {
+    border-width: 0 0 2px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+h2{
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.description{
+    text-align: left;
+    padding-bottom: 35px;
+    padding-left: 9%;
+    padding-right: 3%;
+    margin-bottom: 3%;
+}
+footer{
+    margin-left: 7%;
+    margin-right: 6.3%;
+    background-color: #162b4d;
+    height: 100px;
+    margin-top: 10px;
+}
+.footer_text{
+    display: flex;
+    justify-content: space-between;
+}
+.left_text{
+    margin-left: 1.5%;
+    margin-top: 2.3%;
+}
+.right_text{
+    margin-right: 1%;
+    margin-top: 2%;
+}
+@media (max-width: 1400px) {
+    body {
+        width: 1400px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        height: 327px;
+        margin-bottom: 24px;
+    }
+    .header_logo {
+        padding-top: 22px;
+        font-size: 68px;
+    }
+    .topNav{
+        display: none;
+    }
+    .header_container{
+        justify-content: center;
+    }
+    .sandwich {
+        padding-bottom: 162px;
+        padding-top: 23px;
+    }
+    .sandwich div {
+        width: 26px;
+        height: 5px;
+        background-color: white;
+        margin: 3px 50%;
+        display: block;
+        text-align: center;
+    }
+    .main_post {
+        width: 69%;
+    }
+    .main_blog{
+        width: 29%;
+    }
+    .allPost  {
+        display: block;
+        height: auto;
+    }
+    .main_post img {
+        width: 100%;
+        height: 497px;
+    }
+    .post_description{
+        width: 100%;
+        display: block;
+        height: 385px;
+        margin-left: 3%;
+    }
+    h3 {
+        font-size: 74px;
+        margin-top: 7%;
+    }
+    .post_container > p {
+        line-height: 37px;
+        margin-top: -21px;
+        font-size: 23px;
+        width: 90%;
+    }
+    .post_container{
+        width: 100%;
+    }
+    .post_date {
+        width: auto;
+        text-align: center;
+        margin-top: -18px;
+        margin-right: 20%;
+    }
+    .allPost:nth-child(even) {
+        height: unset;
+    }
+    .allPost:nth-child(even) >.post_description{
+        text-align: left;
+        padding: 0;
+    }
+    .allPost:nth-child(even) >.post_description >.post_date{
+        text-align: center;
+    }
+    footer {
+        height: 170px;
+    }
+    .footer_text{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .main_container{
+        display: block;
+    }
+    .main_post img {
+        height: unset;
+    }
+    header, main,footer {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%
+    }
+    body{
+        margin: 0 auto;
+    }
+    .post_container > p {
+        font-size: 37px;
+        line-height: 44px;
+    }
+    .main_post{
+        margin: 0;
+        width: auto;
+    }
+    .main_blog{
+        width: auto;
+        height: auto;
+    }
+}
