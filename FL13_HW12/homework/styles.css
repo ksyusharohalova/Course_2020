@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.editButton {
+    margin: 5px;
+}
+.list > li:hover{
+    cursor: pointer;
+}
+#root{
+    display: flex;
+    width: 100%;
+}
+.booksList{
+    width:30%;
+}
+.dynamicSection{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+}
+img{
+    width: 300px;
+}
+.keyValue{
+    display: flex;
+}
+p{
+    margin:0;
+    white-space: pre-line;
+    width: 50%;
+}
+.keyValue > span{
+    display: block;
+    width: auto;
+    margin-right: 1%;
+}
+button{
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    background-color: ghostwhite;
+    color: black;
+    border-style: solid;
+}
+.savingButton{
+    margin-right: 40px;
+}
+textarea{
+    width: 500px;
+    height: 300px;
+}
