@@ -1,0 +1,46 @@
+.section__first, .container__card_first, footer{
+    background-color: #343a40;
+}
+.container__logo{
+    font-size: 2.1rem;
+}
+.container__button{
+    height: fit-content;
+}
+.content__link{
+    width: fit-content;
+}
+.container__card_first, .container__card_main{
+    width: 18rem;
+}
+.container__card_second{
+    width: 28rem;
+}
+.container__card_main{
+    width: 24rem;
+}
+.section__second,.container__card_second{
+    background-color: #f8f9fa;
+}
+.btn-primary {
+    background-color: #ff7f50;
+}
+.card-title{
+    width: 250px;
+}
+.card__body{
+    text-align: -webkit-center;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .container__column{
+        width: auto;
+    }
+    .card{
+        width: auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 1200px){
+    .btn-dark{
+        display: none;
+    }
+}
